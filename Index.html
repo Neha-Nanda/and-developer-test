@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+
+    <title>Foresquare examples</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen"/>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="foursq.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+<div>
+    <input name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
+    <button onclick="foursquareApi.userSubmit()
+    foursquareApi.userSubmit()">OK
+    </button>
+</div>
+
+<div id="venue">
+    <div id="name"></div>
+    <div id="id"></div>
+    <div id="location"></div>
+    <div id="rating"></div>
+    <ul id="photos">
+        <li></li>
+    </ul>
+
+    <h3>Events</h3>
+    <ul id="events">
+        <li></li>
+    </ul>
+
+    <h3>Tips</h3>
+    <ul id="tips">
+        <li></li>
+    </ul>
+
+    <h3>Specials</h3>
+    <ul id="specials">
+        <li></li>
+    </ul>
+
+    <h3>Opening Times</h3>
+    <ul id="times">
+        <li></li>
+    </ul>
+
+    <div id="foursquare"></div>
+
+    <!-- Place this script somewhere after the anchor tag above. If you have multiple buttons, only include the script once. -->
+    <script type='text/javascript'>
+
+        $(document).ready(function () {
+            foursquareApi.init();
+            foursquareApi.startWidget();
+
+        });
+    </script>
+
+</div>
+</body>
+</html>
