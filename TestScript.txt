@@ -1,0 +1,12 @@
+This app searches for nearby places by given coordinates- Latitude,Longitude.
+
+Sample Test Data
+
+    a.   40.7,-74					//chicago
+	b.   51.512535,-0.132351		//london, shaftesbury avenue
+    c.   29.43601,106.503525		//china
+    d.   51.165691,10.451526		//germany
+	e.	 28.6328,77.2197 	        //New Delhi
+	
+Search results could have rendered by giving the place name. This can be implemented by changing end point of Four Square API.  I chose
+coordinates  search method
