@@ -1,0 +1,16 @@
+ul#photos {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul#photos li {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    float: left;
+    list-style-type: none;
+}
+
+ul#photos li img {
+}
